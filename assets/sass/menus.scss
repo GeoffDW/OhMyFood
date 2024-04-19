@@ -1,2 +1,12 @@
 @import "src/layout";
 @import "src/menus";
+
+header {
+	img {
+		display: flex;
+		justify-content: center;
+		width: 20px;
+		margin-left: 100px;
+		background: #000;
+	}
+}
