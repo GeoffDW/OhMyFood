@@ -26,6 +26,7 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 header img {
@@ -115,6 +116,7 @@ main p {
 }
 .functioning h2 {
   margin-left: 200px;
+  font-weight: 900;
 }
 .functioning ul {
   display: flex;
@@ -158,106 +160,178 @@ main p {
 
 @media screen and (max-width: 768px) {
   .functioning h2 {
-    width: 100%;
     display: flex;
     align-items: start;
     text-align: start;
-    margin-left: 0;
-    margin-top: 0;
+    margin: 0 0 0 15px;
     font-size: 1.3em;
     font-weight: 900;
   }
-  #restaurants {
-    margin-top: 40px;
-    background-color: #f6f6f6;
+  .functioning ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .functioning li {
+    width: 80%;
+  }
+  .functioning p {
+    gap: 0px;
+    margin-left: -10px;
+    display: block;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+#restaurants {
+  margin-top: 40px;
+  background-color: #f6f6f6;
+}
+#restaurants ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  flex-wrap: wrap;
+  margin: 20px 0 0 200px;
+}
+#restaurants li {
+  width: calc((100% - 80px) / 2);
+  background-color: white;
+  height: 250px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+#restaurants figcaption {
+  color: black;
+  padding: 5px;
+  margin-left: 12px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+#restaurants figcaption h3 {
+  margin-top: -10px;
+  padding-top: 15px;
+  font-weight: 900;
+}
+#restaurants figcaption p {
+  margin-top: -10px;
+}
+#restaurants figure > p {
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 5px 10px;
+  width: 70px;
+  font-weight: 500;
+  border-radius: 3px;
+  position: absolute;
+  margin-left: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#restaurants img {
+  width: 100%;
+  height: 180px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#restaurants h2 {
+  margin-left: 200px;
+  padding: 30px 0 10px 0;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  #restaurants h2 {
+    margin-left: 15px;
   }
   #restaurants ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 70%;
-    flex-wrap: wrap;
-    margin: 20px 0 0 200px;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
   }
   #restaurants li {
-    width: calc((100% - 80px) / 2);
-    background-color: white;
-    height: 250px;
-    border-radius: 0 0 20px 20px;
-    margin-bottom: 50px;
-  }
-  #restaurants figcaption {
-    color: black;
-    padding: 5px;
-    margin-left: 12px;
-    font-family: "Roboto";
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 0.9em;
-  }
-  #restaurants figcaption h3 {
-    margin-top: -10px;
-    padding-top: 15px;
-    font-weight: 900;
-  }
-  #restaurants figcaption p {
-    margin-top: -10px;
+    width: 90%;
   }
   #restaurants figure > p {
-    color: #008766;
-    background-color: #99E2D0;
-    padding: 5px 10px;
-    width: 70px;
-    font-weight: 500;
-    border-radius: 5px;
-    position: absolute;
-    margin-left: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    margin: 10px 248px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    padding-left: 0;
   }
-  #restaurants img {
+  #restaurants figcaption h3, #restaurants p {
+    margin-left: -3px;
+    font-size: 1.2em;
+    display: flex;
+  }
+  #restaurants div p {
     width: 100%;
-    height: 180px;
-    border-radius: 20px 20px 0 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    font-size: 1.1em;
   }
-  #restaurants h2 {
-    margin-left: 200px;
-    padding: 30px 0 10px 0;
-    color: black;
-  }
-  footer {
-    background-color: #353535;
-    display: flex;
-    flex-direction: row-reverse;
-  }
+}
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: row-reverse;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
+  height: 100px;
+  padding-bottom: 20px;
+}
+footer ul figure {
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+}
+footer img {
+  width: 10%;
+  margin: 60px 50px 0 70px;
+  filter: invert(100%);
+}
+footer a {
+  color: white;
+}
+footer a i {
+  font-size: 0.8em;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
   footer ul {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 12px;
-    height: 100px;
-    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    height: 150px;
+    margin-left: 18px;
+    margin-top: 20px;
+    width: 100%;
   }
-  footer ul figure {
+  footer li {
     display: flex;
-    gap: 10px;
-    padding-right: 20px;
+  }
+  footer figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   footer img {
-    width: 10%;
-    margin: 60px 50px 0 70px;
-    filter: invert(100%);
-  }
-  footer a {
-    color: white;
-  }
-  footer a i {
-    font-size: 0.8em;
-    padding-right: 10px;
+    display: flex;
+    width: 30%;
+    position: relative;
+    right: 230px;
+    bottom: 65px;
+    margin: 0;
   }
 }/*# sourceMappingURL=index.css.map */
