@@ -11,7 +11,7 @@ header {
 		display: flex;
 		margin: auto;
 		margin-top: 20px;
-		width: 10%;
+		width: 15%;
 	}
 }
 
@@ -243,7 +243,6 @@ main {
 		font-weight: 500;
 		border-radius: 3px;
 		position: absolute;
-		margin-left: 350px;
 		display: flex;
 		align-items: center;
 		justify-content: end;
@@ -317,7 +316,6 @@ footer {
 		figure {
 			display: flex;
 			gap: 10px;
-			padding-right: 20px;
 		}
 	}
 
@@ -339,16 +337,22 @@ footer {
 
 @media screen and (max-width: 768px) {
 	footer {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 200px;
+		padding-top: 20px;
 		
 		ul {
 			display: flex;
 			flex-direction: column;
 			justify-content: end;
 			align-items: flex-start;
-			height: 150px;
+			height: 140px;
 			margin-left: 18px;
-			margin-top: 20px;
 			width: 100%;
+			padding-top: 0;
 		}
 
 		li {
@@ -364,10 +368,8 @@ footer {
 		img {
 			display: flex;
 			width: 30%;
-			position: relative;
-			right: 230px;
-			bottom: 65px;
 			margin: 0;
+			margin-left: 18px;
 		}
 	}
 }
