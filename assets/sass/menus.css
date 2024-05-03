@@ -62,6 +62,8 @@ h1 {
   flex-direction: column;
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
+  margin-top: -40px;
+  position: relative;
 }
 .menus .heart {
   display: flex;
@@ -129,10 +131,12 @@ h1 {
     width: 70%;
     justify-content: center;
     margin: auto;
+    margin-top: -40px;
+    position: relative;
   }
   .menus h1 {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin: auto;
   }
   .menus ul {
     width: 60%;

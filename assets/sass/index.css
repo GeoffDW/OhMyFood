@@ -36,9 +36,9 @@ header img {
   width: 15%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   header img {
-    width: 50%;
+    width: 20%;
   }
 }
 form {
@@ -57,7 +57,7 @@ form i {
   margin-left: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   form {
     width: 100%;
     box-shadow: 0 2px 12px 4px rgba(0, 0, 0, 0.2);
@@ -74,11 +74,11 @@ main header {
 main header a {
   border: 1px solid none;
   color: white;
-  padding: 12px;
+  padding: 16px;
   border-radius: 50px;
   background-color: #9747FF;
   background: linear-gradient(#FF79DA, #9356DC);
-  margin: 20px 0 20px 0;
+  margin: 20px 0 40px 0;
   font-size: 0.9em;
 }
 main h1 {
@@ -90,19 +90,17 @@ main p {
   font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
-  main {
+@media screen and (min-width: 768px) {
+  main header {
     width: 100%;
   }
-  main h1 {
-    width: 70%;
+  main header h1 {
     font-size: 1.6em;
     font-weight: 900;
     display: flex;
     align-items: center;
-    text-align: center;
   }
-  main p {
+  main header p {
     width: 70%;
     font-size: 0.9em;
     text-align: center;
@@ -112,10 +110,11 @@ main p {
 .functioning {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  padding-top: 40px;
+  margin: auto;
+  width: 90%;
 }
 .functioning h2 {
-  margin-left: 200px;
   font-weight: 900;
 }
 .functioning ul {
@@ -129,27 +128,23 @@ main p {
 .functioning li {
   background-color: #f6f6f6;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: start;
   width: 20%;
-  padding: 10px 10px 10px 15px;
+  padding: 8px 10px 8px 15px;
   border-radius: 20px;
   gap: 18px;
   box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.1);
+  font-size: 0.85em;
 }
 .functioning span {
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
   padding: 1px;
-  width: 20px;
+  width: 15px;
   display: flex;
   justify-content: center;
   margin-left: -25px;
-}
-.functioning ul li:nth-of-type(3) i {
-  color: #9356DC;
 }
 .functioning i {
   color: #7E7E7E;
@@ -158,123 +153,119 @@ main p {
   font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
-  .functioning h2 {
-    display: flex;
-    align-items: start;
-    text-align: start;
-    margin: 0 0 0 15px;
-    font-size: 1.3em;
-    font-weight: 900;
-  }
-  .functioning ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .functioning li {
-    width: 80%;
-  }
-  .functioning p {
-    gap: 0px;
-    margin-left: -10px;
-    display: block;
-    align-items: center;
-    padding-top: 10px;
-  }
-}
-#restaurants {
-  margin-top: 40px;
-  background-color: #f6f6f6;
-}
-#restaurants ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 70%;
-  flex-wrap: wrap;
-  margin: 20px 0 0 200px;
-}
-#restaurants li {
-  width: calc((100% - 80px) / 2);
-  background-color: white;
-  height: 250px;
-  border-radius: 20px;
-  margin-bottom: 50px;
-}
-#restaurants figcaption {
-  color: black;
-  padding: 5px;
-  margin-left: 12px;
-  font-family: "Roboto";
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 0.9em;
-}
-#restaurants figcaption h3 {
-  margin-top: -10px;
-  padding-top: 15px;
+.functioning h2 {
+  margin: 0 0 0 15px;
   font-weight: 900;
+  font-size: 1.3em;
 }
-#restaurants figcaption p {
-  margin-top: -10px;
-}
-#restaurants figure > p {
-  color: #008766;
-  background-color: #99E2D0;
-  padding: 5px 10px;
-  width: 70px;
-  font-weight: 500;
-  border-radius: 3px;
-  position: absolute;
+.functioning ul {
   display: flex;
-  align-items: center;
-  justify-content: end;
-}
-#restaurants img {
+  flex-direction: row;
   width: 100%;
-  height: 180px;
-  border-radius: 20px 20px 0 0;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-#restaurants h2 {
-  margin-left: 200px;
-  padding: 30px 0 10px 0;
-  color: black;
+.functioning li {
+  width: 80%;
+}
+.functioning p {
+  gap: 0px;
+  margin-left: -10px;
+  display: block;
+  align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  #restaurants h2 {
-    margin-left: 15px;
+@media screen and (min-width: 768px) {
+  #restaurants {
+    margin-top: 40px;
+    background-color: #f6f6f6;
   }
   #restaurants ul {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    margin-left: 0;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 40px;
   }
   #restaurants li {
-    width: 90%;
+    width: 40%;
+    background-color: white;
+    height: 220px;
+    border-radius: 20px;
+  }
+  #restaurants figcaption {
+    color: black;
+    padding: 5px;
+    margin-left: 12px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9em;
+  }
+  #restaurants figcaption h3 {
+    margin-top: -10px;
+    padding-top: 15px;
+    font-weight: 900;
+  }
+  #restaurants figcaption p {
+    margin-top: -10px;
   }
   #restaurants figure > p {
-    margin: 10px 248px;
+    color: #008766;
+    background-color: #99E2D0;
+    padding: 5px 10px;
+    width: 70px;
+    font-weight: 500;
     border-radius: 3px;
-    font-size: 0.9em;
-    padding-left: 0;
-  }
-  #restaurants figcaption h3, #restaurants p {
-    margin-left: -3px;
-    font-size: 1.2em;
+    position: absolute;
+    right: 10px;
     display: flex;
+    align-items: center;
+    justify-content: end;
   }
-  #restaurants div p {
+  #restaurants img {
     width: 100%;
-    font-size: 1.1em;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #restaurants h2 {
+    margin-left: 200px;
+    padding: 30px 0 10px 0;
+    color: black;
   }
 }
+#restaurants h2 {
+  margin-left: 15px;
+}
+#restaurants ul {
+  display: flex;
+  flex-direction: row;
+}
+#restaurants li {
+  width: 42%;
+}
+#restaurants figure {
+  position: relative;
+}
+#restaurants figure > p {
+  border-radius: 3px;
+  font-size: 0.9em;
+  padding-left: 0;
+}
+#restaurants figcaption h3, #restaurants p {
+  margin-left: -3px;
+  font-size: 1.2em;
+  display: flex;
+}
+#restaurants div p {
+  width: 100%;
+  font-size: 1.1em;
+}
+
 footer {
   background-color: #353535;
   display: flex;
@@ -305,7 +296,7 @@ footer a i {
   padding-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -320,7 +311,6 @@ footer a i {
     align-items: flex-start;
     height: 140px;
     margin-left: 18px;
-    width: 100%;
     padding-top: 0;
   }
   footer li {
