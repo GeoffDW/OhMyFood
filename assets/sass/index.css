@@ -143,6 +143,9 @@ main p {
   box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.1);
   font-size: 0.85em;
 }
+.functioning li:hover i {
+  color: #9356DC;
+}
 .functioning span {
   color: white;
   background-color: #9356DC;
@@ -155,9 +158,6 @@ main p {
 }
 .functioning i {
   color: #7E7E7E;
-}
-.functioning i:hover {
-  color: #9356DC;
 }
 .functioning p {
   font-weight: 400;
@@ -194,9 +194,6 @@ main p {
   }
   .functioning li {
     font-size: 1em;
-  }
-  .functioning li:hover i {
-    color: #9356DC;
   }
   .functioning li span {
     width: 18px;

@@ -146,6 +146,9 @@ main {
 		gap: 18px;
 		box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.1);
 		font-size: 0.85em;
+		&:hover i {
+			color: #9356DC;
+		}
 	}
 
 	span {
@@ -161,9 +164,6 @@ main {
 
 	i {
 		color: #7E7E7E;
-		&:hover {
-			color: #9356DC;
-		}
 	}
 
 	p {
@@ -212,9 +212,6 @@ main {
 
 		li {
 			font-size: 1em;
-			&:hover i {
-				color: #9356DC;
-			}
 
 			span {
 				width: 18px;
