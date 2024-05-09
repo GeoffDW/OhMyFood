@@ -1,17 +1,233 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "src/layout";
- *   |         ^^^^^^^^^^^^
- *   '
- *   sass/index.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"src/layout\";\a   \2502          ^^^^^^^^^^^^\a   \2575 \a   sass/index.scss 1:9  root stylesheet";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header a {
+  margin: 15px;
+}
+header img {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  header img {
+    width: 15%;
+    margin: auto;
+  }
+}
+main img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  margin-top: -40px;
+  position: relative;
+}
+.menus h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.6em;
+}
+.menus .heart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menus h2 {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+  width: 45px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+.menus ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  gap: 15px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.menus ul li {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.05);
+  height: 65px;
+}
+.menus ul li figure p,
+.menus ul li h3 {
+  margin: 0;
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 0.9em;
+}
+.menus ul li h3 {
+  font-weight: 500;
+}
+.menus ul li p {
+  font-weight: 300;
+}
+.menus ul li b {
+  margin-left: auto;
+  padding-top: 30px;
+  font-weight: 400;
+}
+.menus button {
+  border: 1px solid none;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: #cccccc 0px 5px 10px 0px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 15px;
+  width: 40%;
+  font-size: 1em;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+.menus button:hover {
+  opacity: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  .menus h1 {
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menus {
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    margin-top: -40px;
+    position: relative;
+  }
+  .menus h1 {
+    padding: 20px;
+    margin: auto;
+  }
+  .menus ul {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-left: 40px;
+  }
+  .menus button {
+    padding: 15px;
+    width: 20%;
+  }
+}
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  padding-top: 20px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 18px;
+}
+footer ul li {
+  display: flex;
+}
+footer ul li figure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer img {
+  display: flex;
+  width: 30%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  filter: invert(100%);
+}
+footer a {
+  color: white;
+  padding: 6px;
+}
+footer a i {
+  padding-right: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    height: 100px;
+    padding-bottom: 20px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    font-size: 0.9em;
+  }
+  footer ul figure {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+  }
+  footer img {
+    width: 10%;
+    margin: 68px 50px 0 70px;
+    filter: invert(100%);
+  }
+  footer a {
+    color: white;
+    width: max-content;
+  }
+  footer a i {
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
