@@ -212,7 +212,7 @@ main {
 	background-color: #f6f6f6;
 
 	h2 {
-		margin-left: 20px;
+		margin-left: 20px; // probleme margins//
 		padding-top: 20px;
 		color: black;
 		font-size: 1.3em;
@@ -417,7 +417,7 @@ footer {
 }
 
 .loader-container {
-	position: absolute;
+	position: absolute; //probleme affichage//
 	background-color: white;
 	opacity: 0.8;
 	width: 100%;
