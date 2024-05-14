@@ -20,6 +20,25 @@ a {
   color: #000;
 }
 
+button {
+  border: 1px solid none;
+  color: white;
+  padding: 16px;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 230px;
+  box-shadow: #b2b2b2 0px 5px 10px 0px;
+  font-size: 0.9em;
+  border: none;
+  margin: auto;
+  margin-bottom: 40px;
+  transition: 400ms;
+}
+button:hover {
+  opacity: 70%;
+  box-shadow: #828282 0px 8px 14px 0px;
+}
+
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
@@ -31,16 +50,17 @@ header {
 }
 header a {
   margin: 15px;
+  position: absolute;
 }
 header img {
-  width: 30%;
+  width: 160px;
   margin: auto;
   padding: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   header img {
-    width: 15%;
+    width: 170px;
     margin: auto;
   }
 }
@@ -84,6 +104,7 @@ main img {
   width: 90%;
   gap: 15px;
   margin: auto;
+  margin-bottom: 30px;
   padding-bottom: 20px;
 }
 .menus ul li {
@@ -95,7 +116,7 @@ main img {
   box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.05);
   height: 65px;
 }
-.menus ul li figure p,
+.menus ul li hgroup p,
 .menus ul li h3 {
   margin: 0;
   margin-left: 10px;
@@ -112,23 +133,6 @@ main img {
   margin-left: auto;
   padding-top: 30px;
   font-weight: 400;
-}
-.menus button {
-  border: 1px solid none;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: #cccccc 0px 5px 10px 0px;
-  border-radius: 50px;
-  border: none;
-  color: white;
-  padding: 15px;
-  width: 40%;
-  font-size: 1em;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 45px;
-}
-.menus button:hover {
-  opacity: 70%;
 }
 
 @media screen and (min-width: 768px) {
@@ -155,10 +159,6 @@ main img {
     margin-bottom: 40px;
     padding-left: 40px;
   }
-  .menus button {
-    padding: 15px;
-    width: 20%;
-  }
 }
 footer {
   background-color: #353535;
@@ -177,14 +177,14 @@ footer ul {
 footer ul li {
   display: flex;
 }
-footer ul li figure {
+footer ul li .ftr {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 footer img {
   display: flex;
-  width: 30%;
+  width: 120px;
   margin-left: 20px;
   margin-bottom: 20px;
   filter: invert(100%);
@@ -212,14 +212,14 @@ footer a i {
     align-items: end;
     font-size: 0.9em;
   }
-  footer ul figure {
+  footer ul .ftr {
     display: flex;
     flex-direction: row;
-    padding-right: 30px;
+    padding-right: 15px;
   }
   footer img {
-    width: 10%;
-    margin: 68px 50px 0 70px;
+    width: 130px;
+    margin: 68px 30px 0 30px;
     filter: invert(100%);
   }
   footer a {
@@ -230,5 +230,12 @@ footer a i {
   footer a i {
     font-size: 0.8em;
     padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer img {
+    width: 130px;
+    margin: 68px 50px 0 70px;
+    filter: invert(100%);
   }
 }/*# sourceMappingURL=menus.css.map */

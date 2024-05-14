@@ -20,6 +20,25 @@ a {
   color: #000;
 }
 
+button {
+  border: 1px solid none;
+  color: white;
+  padding: 16px;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 230px;
+  box-shadow: #b2b2b2 0px 5px 10px 0px;
+  font-size: 0.9em;
+  border: none;
+  margin: auto;
+  margin-bottom: 40px;
+  transition: 400ms;
+}
+button:hover {
+  opacity: 70%;
+  box-shadow: #828282 0px 8px 14px 0px;
+}
+
 [id=restaurants] {
   color: blue;
 }
@@ -71,20 +90,6 @@ main header {
   justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
-}
-main header a {
-  border: 1px solid none;
-  color: white;
-  padding: 16px;
-  border-radius: 50px;
-  background-color: #9747FF;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: #cccccc 0px 5px 10px 0px;
-  margin: 20px 0 50px 0;
-  font-size: 0.9em;
-}
-main header a:hover {
-  opacity: 70%;
 }
 main h1 {
   font-size: 1.5em;
@@ -321,7 +326,7 @@ footer ul {
 footer li {
   display: flex;
 }
-footer figure {
+footer .ftr {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -355,7 +360,7 @@ footer a i {
     flex-direction: row;
     align-items: end;
   }
-  footer ul figure {
+  footer ul .ftr {
     display: flex;
     flex-direction: row;
     padding-right: 30px;
@@ -373,5 +378,71 @@ footer a i {
   footer a i {
     font-size: 0.8em;
     padding-right: 10px;
+  }
+}
+.loader-container {
+  position: fixed;
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disappear 300ms 3s forwards;
+  z-index: 1;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #9356DC;
+  animation: spin 2s linear infinite;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+
+.loader::before {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-top-color: #FF79DA;
+  animation: spin 3s linear infinite;
+}
+
+.loader::after {
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  border-top-color: #99E2D0;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }/*# sourceMappingURL=index.css.map */
