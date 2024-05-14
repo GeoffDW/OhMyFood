@@ -111,28 +111,60 @@ main img {
   background-color: white;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.05);
   height: 65px;
 }
-.menus ul li hgroup p,
-.menus ul li h3 {
+.menus ul li:hover b {
+  margin-right: 70px;
+  transition: all 0.5s;
+}
+.menus ul li:hover .fa-circle-check {
+  transition: all 0.5s;
+  right: 0;
+}
+.menus ul hgroup {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus ul hgroup p,
+.menus ul h3 {
   margin: 0;
   margin-left: 10px;
   padding: 2px;
   font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menus ul li h3 {
+.menus ul h3 {
   font-weight: 500;
 }
-.menus ul li p {
+.menus ul p {
   font-weight: 300;
 }
-.menus ul li b {
-  margin-left: auto;
+.menus ul b {
+  margin: 0 20px 0 auto;
   padding-top: 30px;
   font-weight: 400;
+  transition: 0.5s;
+}
+.menus ul .fa-circle-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -60px;
+  color: white;
+  background-color: #99E2D0;
+  height: 65px;
+  width: 60px;
+  border-radius: 0 10px 10px 0;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 768px) {
