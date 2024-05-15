@@ -81,12 +81,13 @@ main img {
 }
 .menus h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
 .menus .heart {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
+  padding-left: 40px;
+  gap: 40px;
 }
 .menus h2 {
   border-bottom: 3px solid #99E2D0;
@@ -169,9 +170,9 @@ main img {
 
 .full {
   height: 24px;
-  position: absolute;
   right: 10px;
   padding-top: 20px;
+  margin-left: -64px;
   opacity: 0;
   background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
   transition: all 0.5s;
@@ -184,7 +185,6 @@ main img {
 
 .fa-regular {
   height: 24px;
-  position: absolute;
   right: 10px;
   padding-top: 20px;
   transition: all 0.5s;
@@ -199,6 +199,12 @@ main img {
     margin: auto;
     padding-top: 20px;
   }
+  .heart {
+    margin: auto;
+  }
+  .full, .fa-regular {
+    padding-top: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menus {
@@ -210,13 +216,15 @@ main img {
   }
   .menus h1 {
     padding: 20px;
-    margin: auto;
   }
   .menus ul {
     width: 60%;
     margin: auto;
     margin-bottom: 40px;
     padding-left: 40px;
+  }
+  .menus ul .full, .menus ul .fa-regular {
+    padding-top: -20px;
   }
 }
 footer {
