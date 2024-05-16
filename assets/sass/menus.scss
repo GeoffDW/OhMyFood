@@ -178,7 +178,7 @@ main img {
     background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
     transition: all 0.5s;
 	-webkit-background-clip: text;
-	&:focus {
+	&:hover {
 		opacity: 1;
 		color: transparent;
 	}
@@ -190,7 +190,7 @@ main img {
 		padding-top: 20px;
 		padding-right: 8px;
 		transition: all 0.5s;
-		&:focus {
+		&:hover {
 			opacity: 1;
 			color: transparent;
 		}

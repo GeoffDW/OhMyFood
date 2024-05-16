@@ -208,7 +208,7 @@ ul:nth-child(3) {
   transition: all 0.5s;
   -webkit-background-clip: text;
 }
-.full:focus {
+.full:hover {
   opacity: 1;
   color: transparent;
 }
@@ -220,7 +220,7 @@ ul:nth-child(3) {
   padding-right: 8px;
   transition: all 0.5s;
 }
-.fa-regular:focus {
+.fa-regular:hover {
   opacity: 1;
   color: transparent;
 }
