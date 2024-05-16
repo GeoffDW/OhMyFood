@@ -300,7 +300,7 @@ main p {
   opacity: 0;
   background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
   transition: all 0.5s;
-  -webkit-background-clip: text;
+  --webkit-background-clip: text;
 }
 .full:hover {
   opacity: 1;
@@ -438,7 +438,6 @@ footer a i {
   justify-content: center;
   align-items: center;
   animation: disappear 300ms 3s forwards;
-  z-index: 1;
 }
 
 .loader {
