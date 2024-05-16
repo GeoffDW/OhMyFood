@@ -178,7 +178,7 @@ main img {
     background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
     transition: all 0.5s;
 	-webkit-background-clip: text;
-	&:hover {
+	&:focus {
 		opacity: 1;
 		color: transparent;
 	}
