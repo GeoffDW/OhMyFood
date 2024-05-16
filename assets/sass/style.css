@@ -116,7 +116,7 @@ main p {
   width: 90%;
   opacity: 0;
   transform: translateX(-30px);
-  animation: apparition 0.7s 3.1s ease-in-out forwards;
+  animation: apparition 0.7s 3.4s ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -298,7 +298,7 @@ main p {
   opacity: 0;
   background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
   transition: all 0.5s;
-  --webkit-background-clip: text;
+  -webkit-background-clip: text;
 }
 .full:hover {
   opacity: 1;
