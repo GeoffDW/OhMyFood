@@ -33,12 +33,21 @@ button {
   margin: auto;
   margin-bottom: 40px;
   transition: 400ms;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
 button:hover {
   opacity: 70%;
   box-shadow: #828282 0px 8px 14px 0px;
 }
 
+@keyframes apparition {
+  100% {
+    opacity: 100%;
+    transform: none;
+  }
+}
 [id=restaurants] {
   color: blue;
 }
@@ -53,6 +62,9 @@ header img {
   margin: auto;
   margin-top: 20px;
   width: 30%;
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -96,10 +108,16 @@ main h1 {
   font-weight: 900;
   margin-top: 30px;
   padding: 0 10px 0 10px;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
 main p {
   font-weight: 100;
   width: 90%;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -473,5 +491,11 @@ footer a i {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }/*# sourceMappingURL=index.css.map */

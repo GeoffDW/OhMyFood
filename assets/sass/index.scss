@@ -14,6 +14,9 @@ header {
 		margin: auto;
 		margin-top: 20px;
 		width: 30%;
+		opacity: 0;
+		transform: translateY(-40px);
+		animation: apparition 0.7s 3.1s ease-in-out forwards;
 	}
 }
 
@@ -68,11 +71,17 @@ main {
 		font-weight: 900;
 		margin-top: 30px;
 		padding: 0 10px 0 10px;
+		opacity: 0;
+		transform: translateX(-30px);
+		animation: apparition 0.7s 3.1s ease-in-out forwards
 	}
 
 	p {
 		font-weight: 100;
 		width: 90%;
+		opacity: 0;
+		transform: translateX(-30px);
+		animation: apparition 0.7s 3.1s ease-in-out forwards
 	}
 }
 
@@ -509,5 +518,13 @@ footer {
 	}
 	100% {
 		opacity: 0;
+	}
+}
+
+
+@keyframes apparition {
+	100% {
+		opacity: 1;
+		transform: none;
 	}
 }

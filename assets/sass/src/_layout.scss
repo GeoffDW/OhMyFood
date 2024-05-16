@@ -35,9 +35,19 @@ button {
     margin: auto;
     margin-bottom: 40px;
     transition: 400ms;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: apparition 0.7s 3.1s ease-in-out forwards;
     &:hover {
         opacity: 70%;
         box-shadow: #828282 0px 8px 14px 0px;
+    }
+}
+
+@keyframes apparition {
+    100% {
+        opacity: 100%;
+        transform: none;
     }
 }
 

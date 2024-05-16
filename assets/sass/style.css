@@ -1,17 +1,345 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "src/layout";
- *   |         ^^^^^^^^^^^^
- *   '
- *   sass/index.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"src/layout\";\a   \2502          ^^^^^^^^^^^^\a   \2575 \a   sass/index.scss 1:9  root stylesheet";
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: 1px solid none;
+  color: white;
+  padding: 16px;
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 230px;
+  box-shadow: #b2b2b2 0px 5px 10px 0px;
+  font-size: 0.9em;
+  border: none;
+  margin: auto;
+  margin-bottom: 40px;
+  transition: 400ms;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: apparition 0.7s 3.1s ease-in-out forwards;
+}
+button:hover {
+  opacity: 70%;
+  box-shadow: #828282 0px 8px 14px 0px;
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 100%;
+    transform: none;
+  }
+}
+body {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+header a {
+  margin: 15px;
+  position: absolute;
+}
+header img {
+  width: 160px;
+  margin: auto;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: apparition 0.7s 0.2s ease-in-out forwards;
+}
+
+@media screen and (min-width: 1200px) {
+  header img {
+    width: 170px;
+    margin: auto;
+  }
+}
+main img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 300px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.7s 0.2s ease-in-out forwards;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  margin-top: -40px;
+  position: relative;
+}
+.menus h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8em;
+  opacity: 0;
+  transform: translateX(30px);
+  animation: apparition 0.7s 0.3s ease-in-out forwards;
+}
+.menus .heart {
+  display: flex;
+  align-items: baseline;
+  padding-left: 40px;
+  gap: 40px;
+}
+.menus h2 {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 4px;
+  width: 45px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+.menus ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  gap: 15px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.menus ul li {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 2px 7px 7px rgba(0, 0, 0, 0.05);
+  height: 65px;
+}
+.menus ul li:hover b {
+  margin-right: 70px;
+  transition: all 0.5s;
+}
+.menus ul li:hover .fa-circle-check {
+  transition: all 0.5s;
+  right: 0;
+}
+.menus ul hgroup {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus ul hgroup p,
+.menus ul h3 {
+  margin: 0;
+  margin-left: 10px;
+  padding: 2px;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menus ul h3 {
+  font-weight: 500;
+}
+.menus ul p {
+  font-weight: 300;
+}
+.menus ul b {
+  margin: 0 20px 0 auto;
+  padding-top: 30px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.menus ul .fa-circle-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -60px;
+  color: white;
+  background-color: #99E2D0;
+  height: 65px;
+  width: 60px;
+  border-radius: 0 10px 10px 0;
+  transition: 0.5s;
+}
+
+ul:nth-child(1) {
+  animation: apparition 0.8s 0.2s ease-in-out forwards;
+}
+
+ul:nth-child(2) {
+  animation: apparition 0.8s 0.5s ease-in-out forwards;
+}
+
+ul:nth-child(3) {
+  animation: apparition 0.8s 0.8s ease-in-out forwards;
+}
+
+.full {
+  height: 24px;
+  right: 10px;
+  padding-top: 20px;
+  margin-left: -64px;
+  opacity: 0;
+  background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
+  transition: all 0.5s;
+  -webkit-background-clip: text;
+}
+.full:hover {
+  opacity: 1;
+  color: transparent;
+}
+
+.fa-regular {
+  height: 24px;
+  right: 10px;
+  padding-top: 20px;
+  transition: all 0.5s;
+}
+.fa-regular:hover {
+  opacity: 1;
+  color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menus h1 {
+    margin: auto;
+    padding-top: 20px;
+  }
+  .heart {
+    margin: auto;
+  }
+  .full, .fa-regular {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menus {
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    margin-top: -40px;
+    position: relative;
+  }
+  .menus h1 {
+    padding: 20px;
+  }
+  .menus ul {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-left: 40px;
+  }
+  .menus ul .full, .menus ul .fa-regular {
+    padding-top: -20px;
+  }
+}
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  padding-top: 20px;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 18px;
+}
+footer ul li {
+  display: flex;
+}
+footer ul li .ftr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+footer img {
+  display: flex;
+  width: 120px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  filter: invert(100%);
+}
+footer a {
+  color: white;
+  padding: 6px;
+}
+footer a i {
+  padding-right: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    height: 100px;
+    padding-bottom: 20px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    font-size: 0.9em;
+  }
+  footer ul .ftr {
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px;
+  }
+  footer img {
+    width: 130px;
+    margin: 68px 30px 0 30px;
+    filter: invert(100%);
+  }
+  footer a {
+    color: white;
+    width: max-content;
+  }
+  footer a i {
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer img {
+    width: 130px;
+    margin: 68px 50px 0 70px;
+    filter: invert(100%);
+  }
+}
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
