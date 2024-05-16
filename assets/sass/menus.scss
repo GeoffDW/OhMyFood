@@ -190,7 +190,7 @@ main img {
 		padding-top: 20px;
 		padding-right: 8px;
 		transition: all 0.5s;
-		&:hover {
+		&:focus {
 			opacity: 1;
 			color: transparent;
 		}
