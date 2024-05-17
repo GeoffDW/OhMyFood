@@ -20,7 +20,7 @@ a {
   color: #000;
 }
 
-button {
+.btn {
   border: 1px solid none;
   color: white;
   padding: 16px;
@@ -37,7 +37,7 @@ button {
   transform: translateX(30px);
   animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
-button:hover {
+.btn:hover {
   opacity: 70%;
   box-shadow: #828282 0px 8px 14px 0px;
 }
@@ -62,9 +62,6 @@ header img {
   margin: auto;
   margin-top: 20px;
   width: 30%;
-  opacity: 0;
-  transform: translateY(-40px);
-  animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -108,16 +105,10 @@ main h1 {
   font-weight: 900;
   margin-top: 30px;
   padding: 0 10px 0 10px;
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: apparition 0.7s 3.1s ease-in-out forwards;
 }
 main p {
   font-weight: 100;
   width: 90%;
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: apparition 0.7s 3.4s ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -490,11 +481,5 @@ footer a i {
   }
   100% {
     opacity: 0;
-  }
-}
-@keyframes apparition {
-  100% {
-    opacity: 1;
-    transform: none;
   }
 }/*# sourceMappingURL=index.css.map */

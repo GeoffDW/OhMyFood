@@ -87,7 +87,6 @@ main img {
 		margin: auto;
 		margin-bottom: 30px;
 		padding-bottom: 20px;
-		opacity: 0;
 		transform: translateY(-30px);
 		li {
 			background-color: white;
@@ -157,15 +156,15 @@ main img {
 	}
 
 	ul:nth-child(1) {
-		animation: apparition 0.8s 0.2s ease-in-out forwards;
+		animation: apparition 1s ease-in-out forwards;
 	}
 
 	ul:nth-child(2) {
-		animation: apparition 0.8s 0.5s ease-in-out forwards;
+		animation: apparition 1.5s ease-in-out forwards;
 	}
 
 	ul:nth-child(3) {
-		animation: apparition 0.8s 0.8s ease-in-out forwards;
+		animation: apparition 2s ease-in-out forwards;
 	}
 
 
@@ -328,6 +327,10 @@ footer {
 }
 
 @keyframes apparition {
+	0% {
+		opacity: 0;
+	}
+
 	100% {
 		opacity: 1;
 		transform: none;
