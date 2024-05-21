@@ -77,8 +77,14 @@ main img {
 		width: 45px;
 		font-size: 1.1em;
 		text-transform: uppercase;
-		margin-bottom: 0;
+		margin-bottom: 20px;
+		margin-left: 6%;
 		font-weight: 100;
+	}
+
+	section {
+		opacity: 0;
+		transform: translateY(-30px);
 	}
 
 	ul {
@@ -88,10 +94,9 @@ main img {
 		width: 90%;
 		gap: 15px;
 		margin: auto;
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 		padding-bottom: 20px;
-		opacity: 0;
-		transform: translateY(-30px);
+
 		li {
 			background-color: white;
 			display: flex;
@@ -157,18 +162,18 @@ main img {
 				transition: 0.5s;
 			}
 		}
-	}
 
-	ul:nth-child(2) {
-		animation: apparition 0.7s 0.4s ease-in-out forwards;
-	}
-
-	ul:nth-child(3) {
-		animation: apparition 0.7s 0.8s ease-in-out forwards;
-	}
-
-	ul:nth-child(4) {
-		animation: apparition 0.7s 1.2s ease-in-out forwards;
+		section:nth-child(2) {
+			animation: apparition 0.7s 0.4s ease-in-out forwards;
+		}
+	
+		section:nth-child(3) {
+			animation: apparition 0.7s 0.8s ease-in-out forwards;
+		}
+	
+		section:nth-child(4) {
+			animation: apparition 0.7s 1.2s ease-in-out forwards;
+		}
 	}
 
 
@@ -201,9 +206,15 @@ main img {
 
 
 @media screen and (min-width: 768px) {
-	.menus h1 {
-		margin: auto;
-		padding-top: 20px;
+	.menus {
+		h1 {
+			margin: auto;
+			padding-top: 20px;
+		}
+
+		h2 {
+			margin-left: 5.4%;
+		}
 	}
 
 	.heart {
@@ -227,6 +238,10 @@ main img {
 			padding: 20px;
 		}
 
+		h2 {
+			margin-left: 22.5%;
+		}
+
 		ul {
 			width: 60%;
 			margin: auto;
@@ -238,29 +253,6 @@ main img {
 			}
 		}
 	}
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    border: 1px solid none;
-    color: white;
-    padding: 16px;
-    border-radius: 50px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    width: 230px;
-    box-shadow: #b2b2b2 0px 5px 10px 0px;
-    font-size: 0.9em;
-    border: none;
-    margin: auto;
-    margin-bottom: 40px;
-    opacity: 0;
-    transition: 0.5s;
-    animation: apparition 0.7s 3.4s ease-in-out forwards;
-    &:hover {
-        opacity: 0.7 !important;
-        box-shadow: #828282 0px 8px 14px 0px;
-    }
 }
 
 footer {
