@@ -23,6 +23,8 @@ a {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
     border: 1px solid none;
     color: white;
     padding: 16px;
@@ -34,13 +36,13 @@ a {
     border: none;
     margin: auto;
     margin-bottom: 40px;
-    transition: 400ms;
     opacity: 0;
-    transform: translateX(30px);
-    animation: apparition 0.7s 3.1s ease-in-out forwards;
+    transition: 0.5s;
+    animation: apparition 0.7s 3.4s ease-in-out forwards;
     &:hover {
-        opacity: 70%;
-        box-shadow: #828282 0px 8px 14px 0px;
+        opacity: 0.8 !important;
+        box-shadow: #828282 0px 8px 10px 0px;
+        transition: all 0.5s;
     }
 }
 
