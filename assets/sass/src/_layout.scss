@@ -46,6 +46,35 @@ a {
     }
 }
 
+.full {
+	height: 24px;
+    position: absolute;
+	right: 10px;
+    padding-top: 25px;
+	margin-right: 20px;
+    opacity: 0;
+    background: -webkit-linear-gradient(-20deg, #9356DC, #FF79DA);
+    transition: all 0.5s;
+	-webkit-background-clip: text;
+	&:hover {
+		opacity: 1;
+        color: transparent;
+	}
+	}
+
+	.fa-regular {
+		height: 24px;
+		position: absolute;
+		right: 10px;
+		padding-top: 25px;
+		margin-right: 20px;
+		transition: all 0.5s;
+		&:hover {
+			opacity: 1;
+			color: transparent;
+		}
+	}
+
 @keyframes apparition {
     100% {
         opacity: 100%;
